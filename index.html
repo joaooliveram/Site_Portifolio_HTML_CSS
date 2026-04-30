@@ -1,17 +1,76 @@
-<html>
-        
-        
+<!DOCTYPE html>
+<html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <title> Jvom Site </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio do Joao</title>
+    <!--link para colocar os icones da redes sociais-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--link para o css personalizado-->
+    <link rel="stylesheet" href="style.css">
+
 </head>
-    <body bgcolor="gray">
-<h1>
-    Site para o desenvolvimento da disciplina de ITW
-</h1>
-        <p>
-        Página com conteudo HTML e CSS e JS
-        sei la o que to escrevendo tudo isso e um teste
-        </p>    
-    </body>  
+
+<body>
+    <!-- Conteúdo da página -->
+    <nav class="barra_de_navegacao">
+        <a href="#home" class="logo">Quem sou eu ?</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Conteúdo principal -->
+    <section id="home" class="conteudo">
+        <div class="conteudo_pagina">
+            <h1>Desenvolvedor Full Stack</h1>
+            <p>Construindo soluções que integram criatividade e tecnologia para transformar ideias em realidade</p>
+            <p class="highlight">Especializando em desenvolvimento web full stack e Back-end</p>
+            <a href="#contato" class="botao_contato">Entrar em contato</a>
+        </div>
+        <div class="fotos_geral">
+            <img src="perfil.jpg" alt="Foto de Perfil" class="foto_perfil">
+        </div>
+    </section>
+
+    <!-- Skills -->
+     <section id="skills" class="skills">
+        <h2>Experiência Técnica</h2>
+        <div class="grade_skills">
+            <div class="skill_card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Desenvolvimento Front-end</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill_card">
+            <i class="fa-solid fa-server"></i>
+            <h3>Desenvolvimento Back-end</h3>
+            <p>C, Python</p>
+            </div>
+            <div class="skill_card">
+            <i class="fa-solid fa-paintbrush"></i>
+            <h3>Design e Ferramentas</h3>
+            <p>Design, Figma, Canvas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final -->
+     <footer>
+        <p>&copy; 2026 João. Todos os direitos reservados.</p>
+        <div class="links_sociais">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+        </div>
+    </footer>
+</body>
 </html>
